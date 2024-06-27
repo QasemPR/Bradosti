@@ -1,0 +1,152 @@
+:root{
+    --primary-color : #4154f1 ;
+    --second-color : #717ff5 ;
+    --Bg-color : #f6f9ff ;
+    --black-color : black ;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  body{
+    font-weight: 600;
+    height: 100%;
+    
+  }
+  nav{
+    padding: 10px 30px;
+    top:0 ;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+  }
+  nav .Logo{
+  color: var(--Bg-color);
+  display: flex;
+  width: 100%;
+  }
+  nav .Logo h1{
+    left: 0;
+    font-size: 40px;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    gap:2rem;
+  }
+
+  nav ul li{
+    list-style-type: none;
+  }
+  nav ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Bg-color);
+  }
+  nav .Menu-icon{
+    color:var(--Bg-color); 
+    line-height: 10px;
+  }
+  nav .Menu-icon span{
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+  }
+  #myul{
+    transition: width 2s ease;
+  }
+  @media(max-width:880px){
+    nav .Logo h1{
+      font-size: 20px;
+    }
+  }
+  @media(max-width:760px){
+    nav .Logo h1{
+      font-size: 20px;
+    }
+    nav ul{
+      position: absolute;
+      top: 80px;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      flex-direction: column;
+      background:var(--primary-color);
+      text-align: center;
+      overflow: auto;
+      scrollbar-width: none;
+      gap: 20px ;
+    }
+    nav ul li{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav .Menu-icon span {
+      display: block;
+      color: #ffffff;
+  
+    }
+    .active{
+      width: 0;
+      color: white;
+    }
+    .myli{
+      display: none;
+      color: #ffffff;
+    }
+  }  @media(max-width:480px){
+    nav .Logo h1{
+      font-size: 15px;
+    }
+    nav{
+      padding: 10px;
+      height: 30px;
+    }
+    nav ul{
+      position: absolute;
+      top: 30px;
+      left: 0;
+      height: 100vh;
+      width: 100px;
+      flex-direction: column;
+      background:var(--primary-color);
+      text-align: center;
+      overflow: auto;
+      line-height: 1px;
+      scrollbar-width: none;
+      gap: 20px ;
+    }
+    nav ul li{
+      margin-top: 20px;
+      display: flex;
+      font-size: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    nav .Menu-icon span {
+      display: block;
+      justify-content: end;
+      font-size: 20px;
+      color: #ffffff;
+  
+    }
+    .active{
+      width: 0;
+      color: white;
+    }
+    .myli{
+      display: none;
+      color: #ffffff;
+    }
+  }
